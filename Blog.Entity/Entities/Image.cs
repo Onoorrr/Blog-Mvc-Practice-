@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace Blog.Entity.Entities
 {
-    public class Category : EntityBase, IEntityBase
+    public class Image : EntityBase, IEntityBase
     {
-       
-        public string Name { get; set; }
+        
+        public string FileName { get; set; }
+        public string FileType { get; set; }
         public ICollection<Article> Articles { get; set;}
     }
 }
